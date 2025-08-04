@@ -1,25 +1,111 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Título de la página</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menú</title>
+  </head>
 
-<body>
-  <!-- Contenido principal de la página -->
+  <body>
+   
 
-  <header>
-    <nav>
+    <header>
+      <nav>
         <ul>
-            <li><a href="index.html">Inicio</a></li>
-            <li><a href="menu.html">Nuestro menu</a></li>
-            <li><a href="galeria.html">Galeria</a></li>
-            <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="menu.html">Nuestro menu</a></li>
+          <li><a href="galeria.html">Galeria</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
         </ul>
-    </nav>
-   </header>
-  <h1>Encabezado principal</h1>
-  <p>Este es un párrafo de texto.</p>
-</body>
+      </nav>
+    </header>
+
+    <div><h1>Menú</h1></div>
+
+    <div>
+      <ul>
+        <li>
+          <h3>Entradas</h3>
+          <h4>Specknudeln</h4>
+          <h5>
+            Delicados Nockerl (pequeños ñoquis de pasta) caseros nadando en un
+            caldo dorado y aromático, acompañados de trocitos de speck ahumado
+            tiroles que aportan un sabor intenso y reconfortante. Un toque de
+            perejil fresco y un hilo de mantequilla derretida redondean esta
+            sopa, típica de las frías tardes en las montañas.
+          </h5>
+          <img
+            src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgASkrTBtOYYDzVxLSMALUo22sShyphenhyphenm2onkV6bp3Y29OV3T1fHUSCyzMNVwRH3vby9mzGh2Qn_sBD4ocFLJyq1zwnuI-JfRYtUDFFaOAAAMyz_IyEiZnGZFAvCKvHbEOxwoqtIfFbotSWVc/s1600/buenos-di%25CC%2581as-Roma---La-Cantina-Tirolese-knodel.jpg"
+            alt="Specknudelnsuppe"
+          />
+        </li>
+      </ul>
+    </div>
+
+     <ul>
+        <li>
+          <h3>Platos Principales</h3>
+          <h4>Tiroler G'röstl</h4>
+           <h5>
+        <i>El sabor contundente de las montañas tirolesas</i>Un festín campesino
+        que revive con cada bocado: patatas doradas y trozos tiernos de carne
+        (cerdo o ternera) se mezclan con cebolla caramelizada y crujientes tiras
+        de speck ahumado. Aromatizado con comino y perejil fresco, se corona con
+        un huevo frito de yema brillante que, al romperse, une todos los
+        sabores.
+      </h5>
+          <img
+             src="https://cookingqueens.nl/wp-content/uploads/2023/01/fe1561ef-4b86-45d2-bde9-61127f55156d-975x1300.jpg"
+        alt="Tiroler G'röstl"
+          />
+        </li>
+      </ul>
+
+   
+      <ul>
+        <li>
+          <h3>Postres</h3>
+          <h4>Apfelstrudel</h4>
+          <h5>
+        Delicadas capas de masa finísima, crujiente y dorada, envuelven un
+        tierno relleno de manzanas aromáticas, canela y pasas, coronado con un
+        toque de azúcar glas. Servido tibio, acompañado de una cucharada
+        generosa de helado de vainilla casero o Schlagsahne (crema batida), este
+        clásico austriaco es la perfecta combinación de texturas y sabores que
+        endulzan el alma.
+      </h5>
+          <img
+             src="https://gourmetdemexico.com.mx/wp-content/uploads/2023/06/strudel-de-manzana-1024x597.jpg"
+        alt="Apfelstrudel"
+          />
+        </li>
+      </ul>
+
+    <footer
+      style="
+        background-color: #f5f5f5;
+        padding: 20px;
+        text-align: center;
+        font-family: Arial, sans-serif;
+        margin-top: 30px;
+      "
+    >
+      <div style="margin-bottom: 15px">
+        <p style="margin: 5px 0; color: #555">
+          <strong>Ubicación:</strong> La Castellana, Caracas
+        </p>
+      </div>
+      <div style="border-top: 1px solid #ddd; padding-top: 15px">
+        <p style="margin: 0; color: #777; font-size: 14px">
+          &copy; Restaurante Herr Fritz <span id="year"></span> | Todos los
+          derechos reservados
+        </p>
+      </div>
+    </footer>
+
+    <script>
+     
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
 </html>
