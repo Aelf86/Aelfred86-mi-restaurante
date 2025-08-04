@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+  </head>
+  <body>
+
+    <header>
+        <nav>
+    <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="menu.html">Nuestro menu</a></li>
+        <li><a href="galeria.html">Galeria</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+        </nav>
+    </header>
+
+    <h1>Contacto</h1>
+
+    <form action="">
+      <div>
+        <label for="nombre"> Nombre:</label>
+        <input type="text" name="nombre" id="nombre" />
+      </div>
+
+      <div>
+        <input type="email" name="email" id="email" placeholder="Email" />
+      </div>
+      
+      <div>
+        <label for="mensaje"> Mensaje:</label>
+        <textarea name="mensaje" id="mensaje"></textarea>
+      </div>
+      
+      <div>Desea recibir nuestra menu?</div>
+        <div>
+            <label for="si">si</label>
+            <input type="checkbox" />
+        </div>
+        <div>
+            <label for="no">no</label>
+            <input type="checkbox" />
+        </div>
+        
+        <label for="pet-select">Elija una sede:</label>
+        
+        <select name="pets" id="pet-select">
+            <option value="">--Por favor elija una opcion--</option>
+            <option value="dog">Caracas</option>
+            <option value="cat">Maracay</option>
+            <option value="hamster">Valencia</option>
+            
+        </select>
+
+        <div>
+          <button type="submit">Enviar</button>
+        </div>
+    </form>
+  </body>
+</html>
