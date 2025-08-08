@@ -1,14 +1,45 @@
+/* Reset básico */
 * {
- margin: 0; 
- padding: 0;
- box-sizing: border-box; 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Header principal */
+.header {
+  background-color: #d40000; /* Rojo tiroles */
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between; 
+  align-items: center; 
+  height: 80px; 
+}
+
+/* Menú de navegación (Ccentro) */
+.header__nav {
+  flex: 1; 
+  display: flex;
+  justify-content: center;
+}
+
+.nav__list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+
+.nav__list a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.nav__list a:hover {
+  color: #ffcccc; 
 }
 
 
-body {
-font-family: Arial, sans-serif;
-font-size: 16px;
-line-height: 1.6;
-color: var(--color-texto);     
-background-color: var(--color-fondo);
-}
+
