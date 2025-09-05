@@ -1,161 +1,307 @@
 /* Reset básico */
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-    body {
-      font-family: 'Lato', sans-serif;
-      font-weight: 400;
-      line-height: 1.6;
-      color: #333;
-      background-color: #fff;
-    }
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fff;
+}
 
-    /* Header principal */
-    .header {
-      background-color: #d40000;
-      color: white;
-      padding: 2rem;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      height: 175px;
-      gap: 2rem;
-    }
+/* Header principal */
+.header {
+  background-color: #d40000;
+  color: white;
+  padding: 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 175px;
+  gap: 2rem;
+}
 
-    /* Títulos */
-    h1, h2, h3, h4, h5, h6 {
-      font-family: 'Playfair Display', serif;
-      font-weight: 600;
-      color: #d40000;
-    }
+/* Títulos */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Playfair Display", serif;
+  font-weight: 600;
+  color: #d40000;
+}
 
-    h1 {
-      text-align: center;
-      margin-bottom: 3rem;
-      font-size: 2.5rem;
-    }
+h1 {
+  text-align: center;
+  margin-bottom: 3rem;
+  font-size: 2.5rem;
+}
 
-    h3 {
-      text-align: center;
-      margin: 2rem 0;
-      font-size: 1.8rem;
-    }
+h3 {
+  text-align: center;
+  margin: 2rem 0;
+  font-size: 1.8rem;
+}
 
-    /* Menú de navegación */
-    .header__logo img {
-      height: 120px;
-      width: auto;
-    }
+/* Menú de navegación */
+.header__logo img {
+  height: 120px;
+  width: auto;
+}
 
-    .nav__list {
-      display: flex;
-      justify-content: center;
-      gap: 1.5rem;
-      list-style: none;
-      font-size: 1.1rem;
-    }
+.nav__list {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  list-style: none;
+  font-size: 1.1rem;
+}
 
-    .nav__list a {
-      color: rgb(253, 253, 253);
-      text-decoration: none;
-      font-weight: 700;
-      transition: color 0.3s;
-      font-family: 'Lato', sans-serif;
-    }
+.nav__list a {
+  color: rgb(253, 253, 253);
+  text-decoration: none;
+  font-weight: 700;
+  transition: color 0.3s;
+  font-family: "Lato", sans-serif;
+}
 
-    .nav__list a:hover {
-      color: #272626;
-    }
+.nav__list a:hover {
+  color: #272626;
+}
 
-    /* Contenido principal */
-    .content {
-      padding: 2rem;
-      max-width: 1200px;
-      margin: 0 auto;
-    }
+/* Contenido principal */
+.content {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-    /* Contenedor para texto e imagen */
-    .content-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-start;
-      gap: 3rem;
-      margin: 2rem 0;
-    }
+/* Contenedor para texto e imagen */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 3rem;
+  margin: 2rem 0;
+}
 
-    /* Columna izquierda con la lista */
-    .content-left {
-      flex: 1;
-      padding: 1.5rem;
-      background-color: #f9f9f9;
-      border-radius: 10px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    }
+/* Columna izquierda con la lista */
+.content-left {
+  flex: 1;
+  padding: 1.5rem;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
 
-    .content-left ul {
-      text-align: left;
-      list-style-position: inside;
-      padding-left: 0;
-    }
+.content-left ul {
+  text-align: left;
+  list-style-position: inside;
+  padding-left: 0;
+}
 
-    .content-left li {
-      margin-bottom: 0.8rem;
-      font-size: 1.1rem;
-      line-height: 1.6;
-    }
+.content-left li {
+  margin-bottom: 0.8rem;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
 
-    /* Columna derecha con la imagen */
-    .content-right {
-      flex: 1;
-      display: flex;
-      justify-content: center;
-      align-items: flex-start;
-    }
+/* Columna derecha con la imagen */
+.content-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
 
-    .content-right-img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 10px;
-      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-      transition: transform 0.3s ease;
-    }
+.content-right-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
 
-    .content-right-img:hover {
-      transform: scale(1.02);
-    }
+.content-right-img:hover {
+  transform: scale(1.02);
+}
 
-    /* Sección de tarjetas */
-    .cards-flex {
-      margin: 2rem 0;
-      display: flex;
-      gap: 2rem;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
+/* Sección de tarjetas */
+.cards-flex {
+  margin: 2rem 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 
-    /* Diseño responsive */
-    @media (max-width: 768px) {
-      .header {
-        flex-direction: column;
-        height: auto;
-        padding: 1.5rem;
-      }
-      
-      .nav__list {
-        flex-direction: column;
-        gap: 0.8rem;
-      }
-      
-      .content-container {
-        flex-direction: column;
-        gap: 2rem;
-      }
-      
-      .content-left, .content-right {
-        width: 100%;
-      }
-    }
+/* Diseño responsive */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 1.5rem;
+  }
+
+  .nav__list {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+
+  .content-container {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .content-left,
+  .content-right {
+    width: 100%;
+  }
+}
+
+/*Formulario*/
+
+/* Estilos para la sección de contacto */
+.contact-section {
+  padding: 3rem 2rem;
+  background-color: #f8f9fa;
+}
+
+.contact-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  gap: 3rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+}
+
+.contact-left {
+  flex: 1;
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-right {
+  flex: 1;
+  position: relative;
+  min-height: 450px;
+}
+
+.contact__img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.9;
+}
+
+/* Mejoras al formulario */
+.formulario {
+  padding: 0;
+  border: none;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: #333;
+  font-family: "Lato", sans-serif;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #d40000;
+  box-shadow: 0 0 0 3px rgba(212, 0, 0, 0.1);
+}
+
+.form-group textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+button[type="submit"] {
+  background-color: #d40000;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
  
+}
+
+button[type="submit"]:hover {
+  background-color: #b30000;
+}
+
+/* Texto de encabezado del formulario */
+.contact-left h2 {
+  margin-bottom: 1.5rem;
+  color: #d40000;
+  font-size: 2rem;
+}
+
+.contact-left p {
+  margin-bottom: 2rem;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* Diseño responsive */
+@media (max-width: 968px) {
+  .contact-container {
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .contact-right {
+    min-height: 300px;
+    order: -1;
+  }
+
+  .contact-left {
+    padding: 2rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-section {
+    padding: 2rem 1rem;
+  }
+
+  .contact-left {
+    padding: 1.5rem;
+  }
+}

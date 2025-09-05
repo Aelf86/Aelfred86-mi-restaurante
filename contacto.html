@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title> Contáctanos</title>
+    <title>Contáctanos</title>
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -27,95 +27,39 @@
         </ul>
       </nav>
     </header>
+    <h1>Somos Herr Fritz</h1>
 
-    <div>
-      <main>
-        <div>
-          <h1>Somos Herr Fritz</h1>
-          <h2>La tradicion de los Alpes en Caracas</h2>
-          <h4>
-            "Wilkommen! En nuestro restaurante Herr Fritz, ofrecemos una
-            autentica experiencia en sabores del Tirol. En nuestro como y
-            acogedor rincon la tradición alpina se mezcla con ingredientes
-            frescos y técnicas centenarias, creando una experiencia que
-            despierta los sentidos y transporta directamente a los cálidos
-            stuben tiroleses. Más que una comida, le ofrecemos un pedazo de los
-            Alpes, servido con pasión y con un toque rústico que solo esta
-            tierra puede inspirar."
-          </h4>
-          <div class="contact__img">
-            <img
-            src="https://manjarargentina.online/wp-content/uploads/2024/05/Austria-restaurante-la-meca-del-goulash-con-Spatzle-2.jpg.webp"
-            alt="Restaurante Herr Fritz"
-          /></div>
-          
+<section class="contact-section">
+  <div class="contact-container">
+    <div class="contact-left">
+      <h2>Para reservas:</h2>
+      <p>Complete el siguiente formulario y nos pondremos en contacto con usted a la brevedad.</p>
+      
+      <form class="formulario">
+        <div class="form-group">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" name="nombre" required>
         </div>
-      </main>
+        
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" required></textarea>
+        </div>
+        
+        <button type="submit">Enviar reserva</button>
+      </form>
     </div>
-
-    <h1>Para reservas:</h1>
-
-    <form action="">
-      <div>
-        <label for="nombre"> Nombre:</label>
-        <input type="text" name="nombre" id="nombre" />
-      </div>
-
-      <div>
-        <label for="nombre"> Email:</label>
-        <input type="email" name="email" id="email" placeholder="Email" />
-      </div>
-
-      <div>
-        <label for="mensaje"> Mensaje:</label>
-        <textarea name="mensaje" id="mensaje"></textarea>
-      </div>
-
-      <div>Desea recibir nuestro menu?</div>
-      <div>
-        <label for="si">si</label>
-        <input type="checkbox" />
-      </div>
-      <div>
-        <label for="no">no</label>
-        <input type="checkbox" />
-      </div>
-
-      <label for="sedes-select">Elija una sede para pedidos:</label>
-
-      <select name="sedes" id="sedes-select">
-        <option value="">--Por favor elija una opcion--</option>
-        <option value="Caracas">Caracas</option>
-        <option value="Maracay">Maracay</option>
-        <option value="Valencia">Valencia</option>
-      </select>
-
-      <div>
-        <button type="submit">Enviar</button>
-      </div>
-    </form>
-
-    <footer
-      style="
-        background-color: #f5f5f5;
-        padding: 20px;
-        text-align: center;
-        font-family: Arial, sans-serif;
-        margin-top: 30px;
-      "
-    >
-      <div style="margin-bottom: 15px">
-        <p style="margin: 5px 0; color: #555">
-          <strong>Ubicación:</strong> La Castellana, Caracas
-        </p>
-      </div>
-      <div style="border-top: 1px solid #ddd; padding-top: 15px">
-        <p style="margin: 0; color: #777; font-size: 14px">
-          &copy; Restaurante Herr Fritz <span id="year"></span> | Todos los
-          derechos reservados
-        </p>
-      </div>
-    </footer>
+    
+    <div class="contact-right">
+      <img src="images/img3.jpg" alt="Ambiente del restaurante Herr Fritz" class="contact__img">
+    </div>
+  </div>
+</section>
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
