@@ -207,7 +207,7 @@ h3 {
   opacity: 0.9;
 }
 
-/* Mejoras al formulario */
+
 .formulario {
   padding: 0;
   border: none;
@@ -260,6 +260,15 @@ button[type="submit"] {
   cursor: pointer;
   transition: background-color 0.3s ease;
  
+}
+
+.resultado {
+  background: white;
+  border: 2px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 15px 0;
+  min-height: 80px;
 }
 
 button[type="submit"]:hover {
