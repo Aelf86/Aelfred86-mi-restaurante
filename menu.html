@@ -4,7 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bienvenidos Restaurante Herr Fritz!</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+
+    <!-- Tu CSS personalizado -->
     <link rel="stylesheet" href="css/styles.css" />
+
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -29,72 +41,90 @@
       </nav>
     </header>
 
-    <div><h1>Menú</h1></div>
-
-    <div>
-      <ul>
-        <li>
-          <h3>Entradas</h3>
-          <h4>Specknudeln</h4>
-          <h5>
-            Delicados Nockerl (pequeños ñoquis de pasta) caseros nadando en un
-            caldo dorado y aromático, acompañados de trocitos de speck ahumado
-            tiroles que aportan un sabor intenso y reconfortante. Un toque de
-            perejil fresco y un hilo de mantequilla derretida redondean esta
-            sopa, típica de las frías tardes en las montañas.
-          </h5>
-          <div class="content__img">
+    <!-- Menú Carrousel-->
+    <main>
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
             <img
-              src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgASkrTBtOYYDzVxLSMALUo22sShyphenhyphenm2onkV6bp3Y29OV3T1fHUSCyzMNVwRH3vby9mzGh2Qn_sBD4ocFLJyq1zwnuI-JfRYtUDFFaOAAAMyz_IyEiZnGZFAvCKvHbEOxwoqtIfFbotSWVc/s1600/buenos-di%25CC%2581as-Roma---La-Cantina-Tirolese-knodel.jpg"
-              alt="Specknudelnsuppe"
+              src="images/img5.jpg"
+              class="d-block w-100"
+              alt="Entradas"
             />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Vorspeisen</h5>
+              <p>Disfruta de nuestras entradas y entremeses</p>
+            </div>
           </div>
-        </li>
-      </ul>
-    </div>
-
-    <ul>
-      <li>
-        <h3>Platos Principales</h3>
-        <h4>Tiroler G'röstl</h4>
-        <h5>
-          <i>El sabor contundente de las montañas tirolesas</i>Un festín
-          campesino que revive con cada bocado: patatas doradas y trozos tiernos
-          de carne (cerdo o ternera) se mezclan con cebolla caramelizada y
-          crujientes tiras de speck ahumado. Aromatizado con comino y perejil
-          fresco, se corona con un huevo frito de yema brillante que, al
-          romperse, une todos los sabores.
-        </h5>
-        <div class="content__img">
-          <img
-            src="https://cookingqueens.nl/wp-content/uploads/2023/01/fe1561ef-4b86-45d2-bde9-61127f55156d-975x1300.jpg"
-            alt="Tiroler G'röstl"
-          />
+          <div class="carousel-item">
+            <img
+              src="images/img1.jpg"
+              class="d-block w-100"
+              alt="Plato especial"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Hauptgerichte</h5>
+              <p>
+                Deleite tu paladar con nuestros insignes platos fuertes
+              </p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="images/img6.jpg"
+              class="d-block w-100"
+              alt="Postres"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Nachtisch</h5>
+              <p>Endulza tu paladar con nuestra selecciones de postres</p>
+            </div>
+          </div>
         </div>
-      </li>
-    </ul>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </main>
 
-    <ul>
-      <li>
-        <h3>Postres</h3>
-        <h4>Apfelstrudel</h4>
-        <h5>
-          Delicadas capas de masa finísima, crujiente y dorada, envuelven un
-          tierno relleno de manzanas aromáticas, canela y pasas, coronado con un
-          toque de azúcar glas. Servido tibio, acompañado de una cucharada
-          generosa de helado de vainilla casero o Schlagsahne (crema batida),
-          este clásico austriaco es la perfecta combinación de texturas y
-          sabores que endulzan el alma.
-        </h5>
-
-        <div class="content__img">
-          <img
-            src="https://gourmetdemexico.com.mx/wp-content/uploads/2023/06/strudel-de-manzana-1024x597.jpg"
-            alt="Apfelstrudel"
-          />
-        </div>
-      </li>
-    </ul>
+   
 
     <footer
       style="
@@ -117,6 +147,13 @@
         </p>
       </div>
     </footer>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+      crossorigin="anonymous"
+    ></script>
 
     <script>
       document.getElementById("year").textContent = new Date().getFullYear();
