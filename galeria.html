@@ -42,8 +42,8 @@
     </header>
 
     <div class="gallery-title"><h1>Galeria de imagenes</h1></div>
-    
-    <div class="gallery-subtitle"><h3>Conoce nuestro restaurante</h3></div>
+
+    <div class="gallery-subtitle"><h3>Conoce nuestro restaurante</h3><p>Auf wiedersehen, te esperamos!!!</p></div>
 
     <!-- Menú Carrousel-->
     <main>
@@ -73,7 +73,6 @@
         <div class="carousel-inner">
           <div class="carousel-item active">
             <img src="images/img7.jpg" class="d-block w-100" alt="Entradas" />
-            
           </div>
           <div class="carousel-item">
             <img
@@ -81,11 +80,9 @@
               class="d-block w-100"
               alt="Plato especial"
             />
-            
           </div>
           <div class="carousel-item">
             <img src="images/img9.jpg" class="d-block w-100" alt="Postres" />
-            
           </div>
         </div>
         <button
@@ -109,33 +106,41 @@
       </div>
     </main>
 
-    <p>Auf wiedersehen, te esperamos!!!</p>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__section">
+            <h3>Ubicación</h3>
+            <p>Av. Principal de La Castellana</p>
+            <p>Caracas, Venezuela</p>
+          </div>
 
-    <footer
-      style="
-        background-color: #f5f5f5;
-        padding: 20px;
-        text-align: center;
-        font-family: Arial, sans-serif;
-        margin-top: 30px;
-      "
-    >
-      <div style="margin-bottom: 15px">
-        <p style="margin: 5px 0; color: #555">
-          <strong>Ubicación:</strong> La Castellana, Caracas
-        </p>
-      </div>
-      <div style="border-top: 1px solid #ddd; padding-top: 15px">
-        <p style="margin: 0; color: #777; font-size: 14px">
-          &copy; Restaurante Herr Fritz <span id="year"></span> | Todos los
-          derechos reservados
-        </p>
+          <div class="footer__section">
+            <h3>Horario</h3>
+            <p>Lunes a Viernes: 12:00 pm - 10:00 pm</p>
+            <p>Sábados y Domingos: 12:00 pm - 11:00 pm</p>
+          </div>
+
+          <div class="footer__section">
+            <h3>Contacto</h3>
+            <p>Teléfono: +58 212 555-1234</p>
+            <p>Email: info@herrfritz.com</p>
+            <div class="footer__social">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer__bottom">
+          <p>
+            &copy; Restaurante Herr Fritz <span id="year"></span> | Todos los
+            derechos reservados
+          </p>
+        </div>
       </div>
     </footer>
-
-    <script>
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
   </body>
   <script
     src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"

@@ -75,6 +75,8 @@ h3 {
   color: #272626;
 }
 
+/*Sección principal de mi pagina index*/
+
 .hero {
   height: 100vh;
   background: url("imag") no-repeat center center/cover;
@@ -104,7 +106,7 @@ h3 {
 }
 
 .hero__title {
-  font-family: var(--font-heading);
+ font-family: "Germania One", cursive;
   font-size: 3.5rem;
   margin-bottom: 20px;
 }
@@ -112,7 +114,8 @@ h3 {
 .hero__subtitle {
   font-size: 1.5rem;
   margin-bottom: 40px;
-  font-family: var(--font-special);
+  font-family: "Germania One";
+  color: #e2e8f0;
 }
 
 .hero__buttons {
@@ -121,7 +124,17 @@ h3 {
   gap: 20px;
 }
 
+.hero-bg-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
 /* Sección de Bienvenida */
+
 .welcome__content {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -169,9 +182,33 @@ h3 {
   }
 }
 
+/* Menú de mi restaurante]*/
+
+.menu-title {
+  font-family: "Germania One", cursive;
+  font-size: 3.5rem;
+  color: #d40000;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  margin: 2rem 0 1rem;
+  letter-spacing: 1px;
+  line-height: 1.2;
+}
+
+.menu-subtitle {
+  font-family: "Grandstander", cursive;
+  font-size: 1.8rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+}
+
 /*Formulario*/
 
 /* Estilos para la sección de contacto */
+
 .contact-section {
   padding: 3rem 2rem;
   background-color: #f8f9fa;
@@ -508,10 +545,69 @@ button[type="submit"]:hover {
 }
 
 /*Footer*/
-.footer__content {
-  background-color: #f5f5f5;
-  padding: 20px;
-  text-align: center;
-  font-family: Arial, sans-serif;
-  margin-top: 30px;
-}
+
+  .footer {
+        background-color: #333;
+        color: white;
+        padding: 60px 0 20px;
+        width: 100%;
+      }
+      
+      .footer__content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 40px;
+        margin-bottom: 40px;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0 20px;
+      }
+      
+      .footer__section h3 {
+        font-family: "Germania One", cursive;
+        color: #FDB813;
+        margin-bottom: 20px;
+        font-size: 1.5rem;
+      }
+      
+      .footer__section p {
+        margin-bottom: 10px;
+      }
+      
+      .footer__social {
+        display: flex;
+        gap: 15px;
+        margin-top: 15px;
+      }
+      
+      .footer__social a {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        background: #d40000;
+        color: white;
+        border-radius: 50%;
+        text-decoration: none;
+        transition: all 0.3s ease;
+      }
+      
+      .footer__social a:hover {
+        background: #FDB813;
+        color: #333;
+        transform: translateY(-3px);
+      }
+      
+      .footer__bottom {
+        border-top: 1px solid rgba(230, 225, 225, 0.1);
+        padding-top: 20px;
+        text-align: center;
+        font-size: 0.9rem;
+        color: rgba(255,255,255,0.7);
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 20px;
+      }
