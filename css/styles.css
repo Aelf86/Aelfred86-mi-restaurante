@@ -314,6 +314,32 @@ button[type="submit"]:hover {
   background-color: #b30000;
 }
 
+/*Apariencia para Boton de submit*/
+
+.submit-interactiv {
+    transition: all 0.3s ease;
+    padding: 12px 24px;
+    background-color: #2d3748;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submit-interactiv:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.datos-enviados {
+    background-color: #f7fafc;
+    padding: 15px;
+    border-radius: 4px;
+    border-left: 4px solid #48bb78;
+    margin-top: 15px;
+}
+
 /* Texto de encabezado del formulario */
 .contact-left h2 {
   margin-bottom: 1.5rem;
